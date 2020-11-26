@@ -13,6 +13,7 @@ var helmet = require('helmet');
 var app = express();
 
 //Set up mongoose connection
+var mongoose = require('mongoose');
 var dev_db_url = 'mongodb+srv://A01053172:Angvil_02@cluster0.1jqyl.mongodb.net/local_library?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
